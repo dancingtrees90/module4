@@ -57,11 +57,13 @@ for (var i = 0; i < names.length; i++) {
   // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
-  if (firstLetter === 'j') {
-    byeSpeaker.speak(names[i]);
-  } else {
-    helloSpeaker.speak(names[i]);
-  }
+  
+  	if(names[i].charAt(0)==='J'|| names[i].charAt(0)==='j'){
+        console.log("Goodbye "+ names[i])
+	}
+	else{
+		console.log("Hello "+ names[i])
+	}
 }
 
 })();
